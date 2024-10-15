@@ -1,12 +1,12 @@
-#TODO
+# TODO
 
-##Restructure
-- init git
-- scenes
-- scripts
+## Restructure
+- init git done
+- scenes done
+- scripts 
 	- make modular
 
-##Implement
+## Implement
 - Pickups
 	- hearts
 	- double Laser
