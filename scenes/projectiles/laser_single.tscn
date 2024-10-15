@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://ulafxvlk41e7"]
+
+[ext_resource type="Script" path="res://scripts/LaserSingle.gd" id="1_mdxd6"]
+[ext_resource type="Texture2D" uid="uid://c1ppu3lpnk8h6" path="res://images/Projectiles/LaserSingle.png" id="1_u1t51"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eo8tq"]
+size = Vector2(10, 10)
+
+[node name="LaserSingle" type="Node2D"]
+script = ExtResource("1_mdxd6")
+
+[node name="Area2D" type="Area2D" parent="." groups=["LaserSingle"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["LaserSingle"]]
+shape = SubResource("RectangleShape2D_eo8tq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("1_u1t51")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Area2D"]
+position = Vector2(2.38419e-07, 2.38419e-07)
+scale = Vector2(0.5, 0.5)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="screen_exited" from="Area2D/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://37q8xsuom3xy"]
+
+[ext_resource type="Texture2D" uid="uid://dj52cbhi44s2x" path="res://images/Hearth.png" id="1_g3867"]
+
+[node name="Heart" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -16.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 8)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_g3867")

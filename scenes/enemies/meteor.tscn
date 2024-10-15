@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://4ocqgkkomdud"]
+
+[ext_resource type="Script" path="res://scripts/Meteor.gd" id="1_1p3ov"]
+[ext_resource type="Texture2D" uid="uid://dgdhfhkgfmecb" path="res://images/Enemies/Meteor.png" id="1_2vbig"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gv6af"]
+size = Vector2(40, 40)
+
+[node name="Meteor" type="Node2D"]
+script = ExtResource("1_1p3ov")
+
+[node name="Area2D" type="Area2D" parent="." groups=["Meteor"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_gv6af")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("1_2vbig")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Area2D"]
+position = Vector2(9.53674e-07, 9.53674e-07)
+scale = Vector2(2, 2)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="screen_exited" from="Area2D/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
