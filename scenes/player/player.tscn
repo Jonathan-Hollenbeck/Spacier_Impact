@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bqgy8kny53m8i"]
 
-[ext_resource type="Script" path="res://scripts/Player.gd" id="1_qt0a0"]
-[ext_resource type="Texture2D" uid="uid://dp4o61f10ltjp" path="res://images/Starship1-sheet.png" id="2_fcncf"]
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_comai"]
+[ext_resource type="Texture2D" uid="uid://dp4o61f10ltjp" path="res://assets/images/player/Starship1-sheet.png" id="2_fcncf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3yedj"]
 atlas = ExtResource("2_fcncf")
@@ -50,8 +50,7 @@ animations = [{
 size = Vector2(44, 50)
 
 [node name="Player" type="Node2D"]
-script = ExtResource("1_qt0a0")
-hitpoints = 1
+script = ExtResource("1_comai")
 
 [node name="Area2D" type="Area2D" parent="." groups=["Player"]]
 

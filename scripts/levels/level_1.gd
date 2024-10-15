@@ -7,7 +7,7 @@ extends Node2D
 @onready var player = $Player
 @onready var meteorsContainer = $MeteorsContainer
 
-var meteor = preload("res://scenes/Meteor.tscn")
+var meteor = preload("res://scenes/enemies/meteor.tscn")
 var screen_size : Vector2
 var random_number_generator : RandomNumberGenerator = RandomNumberGenerator.new()
 

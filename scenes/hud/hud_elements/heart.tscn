@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://37q8xsuom3xy"]
-
-[ext_resource type="Texture2D" uid="uid://dj52cbhi44s2x" path="res://images/Hearth.png" id="1_g3867"]
+[gd_scene format=3 uid="uid://37q8xsuom3xy"]
 
 [node name="Heart" type="Control"]
 layout_mode = 3
@@ -18,4 +16,3 @@ scale = Vector2(2, 2)
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(8, 8)
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("1_g3867")

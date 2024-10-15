@@ -14,7 +14,7 @@ extends Node2D
 signal game_over
 signal set_hitpoints
 
-var laser_single = preload("res://scenes/Projectiles/LaserSingle.tscn")
+var laser_single = preload("res://scenes/projectiles/laser_single.tscn")
 var screen_size : Vector2
 
 var speed : Vector2 = Vector2(0, 0)

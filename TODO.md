@@ -3,8 +3,8 @@
 ## Restructure
 - init git done
 - scenes done
-- scripts 
-	- make modular
+- scripts done
+- make modular
 
 ## Implement
 - Pickups
@@ -21,6 +21,8 @@
 		- enememy 1
 	- stage 3
 		- boss
+
+- make game scalable
 
 - Layert background
 	- modular background

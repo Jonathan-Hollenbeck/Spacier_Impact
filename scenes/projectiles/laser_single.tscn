@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://ulafxvlk41e7"]
 
-[ext_resource type="Script" path="res://scripts/LaserSingle.gd" id="1_mdxd6"]
-[ext_resource type="Texture2D" uid="uid://c1ppu3lpnk8h6" path="res://images/Projectiles/LaserSingle.png" id="1_u1t51"]
+[ext_resource type="Script" path="res://scripts/projectiles/laser_single.gd" id="1_6v78b"]
+[ext_resource type="Texture2D" uid="uid://c1ppu3lpnk8h6" path="res://assets/images/projectiles/LaserSingle.png" id="1_u1t51"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eo8tq"]
 size = Vector2(10, 10)
 
 [node name="LaserSingle" type="Node2D"]
-script = ExtResource("1_mdxd6")
+script = ExtResource("1_6v78b")
 
 [node name="Area2D" type="Area2D" parent="." groups=["LaserSingle"]]
 

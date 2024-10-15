@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://4ocqgkkomdud"]
 
-[ext_resource type="Script" path="res://scripts/Meteor.gd" id="1_1p3ov"]
-[ext_resource type="Texture2D" uid="uid://dgdhfhkgfmecb" path="res://images/Enemies/Meteor.png" id="1_2vbig"]
+[ext_resource type="Texture2D" uid="uid://dgdhfhkgfmecb" path="res://assets/images/enemies/Meteor.png" id="1_2vbig"]
+[ext_resource type="Script" path="res://scripts/enemies/meteor.gd" id="1_cbuu7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gv6af"]
 size = Vector2(40, 40)
 
 [node name="Meteor" type="Node2D"]
-script = ExtResource("1_1p3ov")
+script = ExtResource("1_cbuu7")
 
 [node name="Area2D" type="Area2D" parent="." groups=["Meteor"]]
 

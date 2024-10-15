@@ -1,8 +1,8 @@
 extends Node2D
 
 @onready var hud = $CanvasLayer/HUD
-@onready var level = $Level
-@onready var player = $Level/Player
+@onready var level = $"Level 1"
+@onready var player = $"Level 1/Player"
 
 func _ready() -> void:
 	player.game_over.connect(game_over)

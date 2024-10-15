@@ -5,7 +5,7 @@ extends Control
 @onready var high_score_label = $HighScore
 @onready var hitpoints : Control = $Hitpoints
 
-var heart = preload("res://scenes/Heart.tscn")
+var heart = preload("res://scenes/hud/hud_elements/heart.tscn")
 var heart_width = 32
 
 signal retry_button_pressed

@@ -31,12 +31,6 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		if hitpoints <= 0:
 			destroyed.emit()
 			queue_free()
-	if area.is_in_group("Meteor"):
-		if area.global_position.x < global_position.x:
-			movement.x += 1
-		else:
-			movement.x -= 1
-		movement.y *= -1
 
 func in_range(value: float, min: float, max: float) -> bool:
 	return value >= min and value <= max
